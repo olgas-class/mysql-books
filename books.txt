@@ -1,0 +1,20 @@
+BOOKS
+
+id - INT - PRIMARY_KEY(NOTNULL, UNIQUE) - AUTO_INCREMENT
+isbn - VARCHAR(13) - NOTNULL - UNIQUE
+title - VARCHAR(100) - NOTNULL - INDEX
+description - TEXT - NULL
+pages_number - UNSIGNED SMALLINT - NULL
+genre - VARCHAR(30) - NOTNULL
+author - VARCHAR(100) - NOTNULL
+publish_year - YEAR - NULL
+vote - FLOAT(3, 1) - NOTNULL- DEFAULT(0) --> 0.0 A 10.0
+publisher - VARCHAR(30) - NOTNULL
+copies_sold - INT - NULL
+price - DECIMAL(7, 2) - NOTNULL
+poster - VARCHAR(255) - NOTNULL - DEFAULT("/img/src/default.jpg")
+copies_number - INT - NULL
+language - VARCHAR(2) - NOTNULL
+size_mm - VARCHAR(50) - NULL
+weight_gr - SMALLINT - NULL
+is_bestseller - TINYINT - NOTNULL - DEFAULT(0)
